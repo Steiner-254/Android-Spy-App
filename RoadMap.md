@@ -34,7 +34,12 @@
 7. Delete all the videos.
 - Now, delete all videos in the YouTube account.
 
+>> `Mark ALL & Delete All The Videos`
+
 8. Work Done!
 - Celebrate a success completetion.
 
 
+## Highlights
+- Estimated Time (1-4 weeks) Depending On The Stages Of `Delivering The Spy App` & also `Victim Falling Trap Of The Spy Application`
+- 
