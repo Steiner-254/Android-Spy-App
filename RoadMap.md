@@ -47,4 +47,8 @@
 
 
 ## Features Of The Spy Application
-1. 
+1. Undetectable application by the target victim.
+- Upon delivering (i.e on the social media applications)
+- When residing in their android/IOS phone.
+2. 
+3. 
