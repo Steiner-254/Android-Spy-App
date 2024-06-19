@@ -162,7 +162,16 @@ class CommandService : Service() {
                             // Coming Soon
                         }
 
-                        ""
+                        "openApp" -> {
+                            val appPackage = cmd.get("arg1").toString()
+                            val intent: Intent = PackageManager.getLaunchIntentForPackage(appPackage)
+                            startActivity(intent)
+                        }
+
+                        "openWhatsap" -> {
+                            val number = cmd.get("arg1").toString()
+                            val text = cmd.get("arg2")?toString() ?: ""
+                        }
                     }
                 }
             }
