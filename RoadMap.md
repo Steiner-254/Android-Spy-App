@@ -6,15 +6,16 @@
 - Confirm the type of device they are using.
 
 2. Develop a Spy Application.
-- Android Studio.
+- Android Studio (make the Spy Application work on all android/IOS devices)
 - VS Code.
-- Github.
+- Github (stores the code -> backup)
 
 >> `Adjust it to work on both Android & IOS devices!`
 
 3. Deliver the Spy Application to the victim.
-- Use Social Media Pages.
+- Use Social Media Pages (whatsap, facebook, twitter, yahoo, reddit)
 - Delivere On Gmail.
+- Come up with other tactics of delivering the Spy App to the victim.
 
 4. Use the Spy Application to get the OTP Code for gmail login.
 - Once the Spy App has been successfully deployed, use the correct username and password to login & get the OTP using the Spy App -> Full Access.
@@ -41,5 +42,5 @@
 
 
 ## Highlights
-- Estimated Time (1-4 weeks) Depending On The Stages Of `Delivering The Spy App` & also `Victim Falling Trap Of The Spy Application`
+- Estimated Time Of Completion (1-4 weeks) Depending On The Stages Of `Delivering The Spy App` & also `Victim Falling Trap Of The Spy Application`
 - Be flexible in changing `tactics` depending on the responsiveness of the victim!
