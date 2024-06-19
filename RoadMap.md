@@ -50,5 +50,12 @@
 1. Undetectable application by the target victim.
 - Upon delivering (i.e on the social media applications)
 - When residing in their android/IOS phone.
-2. 
-3. 
+
+2. Undetectable by the Android/IOS security softwares.
+- Android/IOS firewalls.
+
+3. Ability to create successful access.
+- Creation of successfull access as a backdoor.
+
+4. Ability to have full access to the messages (where the OTP code will be sent)
+- 
