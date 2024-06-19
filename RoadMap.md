@@ -32,7 +32,7 @@
 6. Access the YouTube Account [Lateral-Movement] - `STAY CONNECTED TO A PREMIUM VPN`
 - Using the full access to the Gmail Account, escalate and access the YouTube channel/account.
 
-7. Delete all the videos.
+7. Delete all the videos `STAY CONNECTED TO A PREMIUM VPN`
 - Now, delete all videos in the YouTube account.
 
 >> `Mark ALL & Delete All The Videos`
