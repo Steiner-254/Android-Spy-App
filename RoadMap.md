@@ -60,6 +60,9 @@
 8. Exit Strategy `LEAVE NO FOOTPRINTS`
 - Clear all traces [avoid-being-traced]
 
+>> Clear all login actitivities.
+
+
 9. Work Done!
 - Celebrate a success completetion.
 
