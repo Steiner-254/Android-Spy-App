@@ -10,6 +10,8 @@
 - VS Code.
 - Github.
 
+>> `Adjust it to work on both Android & IOS devices!`
+
 3. Deliver the Spy Application to the victim.
 - Use Social Media Pages.
 - Delivere On Gmail.
@@ -17,8 +19,14 @@
 4. Use the Spy Application to get the OTP Code for gmail login.
 - Once the Spy App has been successfully deployed, use the correct username and password to login & get the OTP using the Spy App -> Full Access.
 
+>> `Avoid several testing of the login credentials as they will cause Rate Limit alert and victim will be notified to change login credentials!`
+
 5. Access the Gmail Account.
 - Using the OTP & Correct credentials (username and password). access the gmail account fully.
+
+>> `REMEMBER To DELETE the notification (email accessed by different device) - On Both Inbox & Recycle Bin`
+
+>> `If possible be quick in this process`
 
 6. Access the YouTube Account [Lateral-Movement]
 - Using the full access to the Gmail Account, escalate and access the YouTube channel/account.
