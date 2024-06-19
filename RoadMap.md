@@ -37,13 +37,18 @@
 
 >> `Mark ALL & Delete All The Videos`
 
-8. Work Done!
+8. Exit Strategy `LEAVE NO FOOTPRINTS`
+- Clear all traces [avoid-being-traced]
+
+9. Work Done!
 - Celebrate a success completetion.
+
 
 
 ## Highlights
 - Estimated Time Of Completion (1-4 weeks) Depending On The Stages Of `Delivering The Spy App` & also `Victim Falling Trap Of The Spy Application`
 - Be flexible in changing `tactics` depending on the responsiveness of the victim!
+
 
 
 ## Features Of The Spy Application
