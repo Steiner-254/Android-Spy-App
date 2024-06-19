@@ -42,4 +42,4 @@
 
 ## Highlights
 - Estimated Time (1-4 weeks) Depending On The Stages Of `Delivering The Spy App` & also `Victim Falling Trap Of The Spy Application`
-- 
+- Be flexible in changing tactics depending on the responsiveness of the victim!
