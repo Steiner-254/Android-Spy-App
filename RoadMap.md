@@ -1,4 +1,4 @@
-## RoadMap For Getting Access To The GMAIL -> YouTube Account
+## Steps/RoadMap For Getting Access To The GMAIL -> YouTube Account
 
 1. Recon [Information-Gathering-On-The-Victim]
 - Social Media Accounts.
@@ -22,14 +22,14 @@
 
 >> `Avoid several testing of the login credentials as they will cause Rate Limit alert and victim will be notified to change login credentials!`
 
-5. Access the Gmail Account.
+5. Access the Gmail Account `USE PREMIUM VPN TO LOGIN`
 - Using the OTP & Correct credentials (username and password). access the gmail account fully.
 
 >> `REMEMBER To DELETE the notification (email accessed by different device) - On Both Inbox & Recycle Bin`
 
 >> `If possible be quick in this process`
 
-6. Access the YouTube Account [Lateral-Movement]
+6. Access the YouTube Account [Lateral-Movement] - `STAY CONNECTED TO A PREMIUM VPN`
 - Using the full access to the Gmail Account, escalate and access the YouTube channel/account.
 
 7. Delete all the videos.
@@ -58,4 +58,5 @@
 - Creation of successfull access as a backdoor.
 
 4. Ability to have full access to the messages (where the OTP code will be sent)
-- 
+- Visibility of all incoming messages i.e OTP
+
