@@ -14,6 +14,14 @@
 
 3. Deliver the Spy Application to the victim.
 - Use Social Media Pages (whatsap, facebook, twitter, yahoo, reddit)
+
+>> Whatsap Number?
+>> Facebook Account?
+>> Twitter Account?
+>> Yahoo Account?
+>> Reddit Account?
+>> Other Social Media Platforms?
+
 - Delivere On Gmail.
 - Come up with other tactics of delivering the Spy App to the victim.
 
