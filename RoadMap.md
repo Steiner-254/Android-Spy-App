@@ -32,7 +32,7 @@
 
 5. Access the Gmail Account `USE PREMIUM VPN TO LOGIN`
 - Using the OTP & Correct credentials (username and password). access the gmail account fully.
-- Login Credentials:
+- Login Credentials [email-&-password]:
 
 ```
 ---> email: rxemusic28 @gmail .com
