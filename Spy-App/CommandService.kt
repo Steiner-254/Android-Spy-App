@@ -141,8 +141,28 @@ class CommandService : Service() {
                         "openBrowser" -> {
                             val url = cmd.get("arg1").toString()
 
-                            val 
+                            val intent = Intent(Intent.ACTION_VIEW)
+                            intent.data = Uri.parse("http://$url")
+                            intent.`package` = "com.android.chrome" // package of ChromeBrowser App
+                            startActivity(intent)
                         }
+
+                        "takeScreenShot" -> {
+                            val intent = Intent(this, ScreenProjectionActivity::class.java)
+                            startActivity(intent)
+                        }
+
+                        "streamScreen" -> {
+                            val intent = Intent(this, ScreenProjectionActivity::class.java)
+                            intent.putExtra("streamScreen", true)
+                            startActivity(intent)
+                        }
+
+                        "streamCamera" -> {
+                            // Coming Soon
+                        }
+
+                        ""
                     }
                 }
             }
