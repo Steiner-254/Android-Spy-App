@@ -32,4 +32,12 @@ class CameraTask(private val ctx: Context) : Thread() {
         super.run()
         Log.d(Constants.tag, "Camera Task")
     }
+
+    private fun getPicture() {
+        val manager = ctx.getSystemService(Context.CAMERA_SERVICE) as CameraManager
+    }
+
+    private fun foo() {
+        // Logic coming soon
+    }
 }
