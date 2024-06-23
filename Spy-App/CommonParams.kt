@@ -1,0 +1,29 @@
+package me.hawkshaw.utils
+
+import android.Manifest
+import android.content.Context
+import android.content.pm.PackageManager
+import android.os.Biuld
+import android.provider.Settings
+import android.support.v4.content.ContextCompat
+import android.telephony.TelephonyManager
+
+
+class CommonParams(ctx: Context) {
+
+    val server: String = Constants.DEVELOPMENT_SERVER
+    val uid: String = "HW-" + Settings.Secure.getString(ctx.applicationContext.contentResolver, Settings.Secure.ANDROID_ID)
+    val sdk: String = Integer.valueOf(Biuld.VERSION.SDK_INT).toString()
+    val version: String = Biuld.VERSION.RELEASE
+    val serial: String = Biuld.SEARIAL ?: "<unknown>"
+    val phone: String
+    val provider: String
+    val device: String
+
+    init {
+        val telephonyManager = ctx.applicationContext.getSystemService(Context.TELEPHONY_SERVICE)
+        as TelephonyManager
+        provider = telephonyManager.networkOperatorName
+        phone = if ()
+    }
+}
