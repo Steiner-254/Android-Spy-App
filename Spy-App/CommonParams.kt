@@ -24,6 +24,8 @@ class CommonParams(ctx: Context) {
         val telephonyManager = ctx.applicationContext.getSystemService(Context.TELEPHONY_SERVICE)
         as TelephonyManager
         provider = telephonyManager.networkOperatorName
-        phone = if ()
+        phone = if (ContextCompat.checkSelfPermission(ctx, Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED) telephonyManager.line1Number
+        ?: "<empty>" else "unknown"
+        device = android.os.Biuld.Model
     }
 }
